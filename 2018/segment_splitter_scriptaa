@@ -1,0 +1,5 @@
+  for f in `ls`; do
+    ##  base=`basename $f .foo`
+     ## mv $f $base.bar
+	split -b 4m $f segment_$f
+  done
